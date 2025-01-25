@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Navegación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Mosaico 2x2 */
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-card {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .video-card video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resultados de Navegación</h1>
+        <p>Visualización de experimentos en un mosaico 2x2</p>
+    </header>
+    <div class="container">
+        <div class="video-card">
+            <h2>Exploración con Agente A</h2>
+            <p>Este video muestra cómo el Agente A navega en un entorno desconocido.</p>
+            <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+        <div class="video-card">
+            <h2>Exploración con Agente B</h2>
+            <p>El Agente B utiliza un enfoque optimizado para evitar obstáculos.</p>
+            <video controls>
+                <source src="videos/video2.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+        <div class="video-card">
+            <h2>Exploración con Agente C</h2>
+            <p>Este experimento destaca las capacidades avanzadas del Agente C.</p>
+            <video controls>
+                <source src="videos/video3.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+        <div class="video-card">
+            <h2>Exploración con Agente D</h2>
+            <p>El Agente D demuestra un enfoque innovador en este escenario.</p>
+            <video controls>
+                <source src="videos/video4.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+    </div>
+    <footer>
+        © 2025 - Tus Resultados en Navegación Robótica
+    </footer>
+</body>
+</html>

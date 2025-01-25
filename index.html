@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados de Navegación</title>
+    <title>Robot Navigation Results</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,9 +21,18 @@
         header h1 {
             margin: 0;
         }
+        .description {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* Mosaico 2x2 */
+            grid-template-columns: 1fr 1fr; /* 2x2 grid */
             gap: 20px;
             max-width: 1200px;
             margin: 20px auto;
@@ -57,45 +66,53 @@
 </head>
 <body>
     <header>
-        <h1>Resultados de Navegación</h1>
-        <p>Visualización de experimentos en un mosaico 2x2</p>
+        <h1>Robot Navigation Results</h1>
     </header>
+    <div class="description">
+        <p>
+            These experiments were conducted using the <b>Soft Actor-Critic (SAC)</b> algorithm, 
+            a state-of-the-art method for reinforcement learning that balances exploration and exploitation. 
+            Each video showcases a different agent navigating through an unknown environment. 
+            For more details about SAC, please refer to the 
+            <a href="https://arxiv.org/abs/1812.05905" target="_blank">original paper</a>.
+        </p>
+    </div>
     <div class="container">
         <div class="video-card">
-            <h2>Exploración con Agente A</h2>
-            <p>Este video muestra cómo el Agente A navega en un entorno desconocido.</p>
+            <h2>Agent A Exploration</h2>
+            <p>This video demonstrates how Agent A navigates an unknown environment.</p>
             <video controls>
                 <source src="videos/video1.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
+                Your browser does not support the video tag.
             </video>
         </div>
         <div class="video-card">
-            <h2>Exploración con Agente B</h2>
-            <p>El Agente B utiliza un enfoque optimizado para evitar obstáculos.</p>
+            <h2>Agent B Exploration</h2>
+            <p>Agent B uses an optimized approach to avoid obstacles.</p>
             <video controls>
                 <source src="videos/video2.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
+                Your browser does not support the video tag.
             </video>
         </div>
         <div class="video-card">
-            <h2>Exploración con Agente C</h2>
-            <p>Este experimento destaca las capacidades avanzadas del Agente C.</p>
+            <h2>Agent C Exploration</h2>
+            <p>This experiment highlights the advanced capabilities of Agent C.</p>
             <video controls>
                 <source src="videos/video3.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
+                Your browser does not support the video tag.
             </video>
         </div>
         <div class="video-card">
-            <h2>Exploración con Agente D</h2>
-            <p>El Agente D demuestra un enfoque innovador en este escenario.</p>
+            <h2>Agent D Exploration</h2>
+            <p>Agent D demonstrates an innovative approach in this scenario.</p>
             <video controls>
                 <source src="videos/video4.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
+                Your browser does not support the video tag.
             </video>
         </div>
     </div>
     <footer>
-        © 2025 - Tus Resultados en Navegación Robótica
+        © 2025 - Robotic Navigation Results
     </footer>
 </body>
 </html>
